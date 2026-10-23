@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Wall</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 h-screen w-screen overflow-hidden relative m-0 p-0">
+<div class="absolute top-4 right-4 text-slate-400 text-sm pointer-events-none bg-slate-800 px-4 py-2 rounded-lg border border-slate-700"> 
+    انقر باي مكان فارغ لاضافة ندوق ذكرى .الضغط على الزر الايمن على الصندوق للخيارات .
+</div>
+<div id="contextMenu" class="hidden absolute bg-slate-800 border border-slate-700 rounded-lg shadow-xl py-2 w-32 z-50 text-slate-200 text-sm ">
+    <button id="btnCopy" class="w-full text-right px-4 py-2 hover:bg-slate-700">نسخ </button>
+    <button id="btnCut" class="w-full text-right px-4 py-2 hover:bg-slate-700">قص </button>
+    <button id="btnDelete" class="w-full text-right px-4 py-2 text-red-400 hover:bg-red-500/20">حذف </button>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
