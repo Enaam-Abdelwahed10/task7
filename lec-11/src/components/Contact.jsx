@@ -7,7 +7,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(form) // لاحقاً بتربطيها مع backend أو خدمة إيميل
+    console.log(form);
     setForm({ name: '', email: '', message: '' })
   }
 
