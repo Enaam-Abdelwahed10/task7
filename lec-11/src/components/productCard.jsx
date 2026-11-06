@@ -1,5 +1,5 @@
 import { useState } from 'react'
-export default function ProductCard({ name, image, price, category, description }) {
+export default function ProductCard({ name, image, price, category }) {
   const [quantity, setQuantity] = useState(1)
   const [liked, setLiked] = useState(false)
   const [message, setMessage] = useState('')
@@ -43,7 +43,6 @@ export default function ProductCard({ name, image, price, category, description 
       <div className="p-4">
         <p className="text-sm text-gray-500">{category}</p>
         <h3 className="font-semibold">{name}</h3>
-        <p className="mb-2 text-sm text-gray-500">{description}</p>
         <p className="mb-3 font-bold text-indigo-600">${price}</p>
 
         <div className="mb-3 flex items-center gap-3">
